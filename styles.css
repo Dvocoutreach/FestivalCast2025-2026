@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "sansation", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: #100D0B;
+}
+
+img {
+  width: 100%;
+}
+
+.outer_container {
+  height: 50vh;
+  width: 1200px;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  /* flex-wrap: wrap; */
+}
+
+/* font styles */
+
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.cast_header {
+  font-size: 45px;
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cast_link {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+
+
+/***************Navigation Styles***************/
+
+
+.navigation,
+.nav_flex  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation {
+  margin-top: 15px;
+}
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    padding: 20px;
+    
+}
+
+.logo_container {
+   width: 125px;
+}
+
+
+/* main styles */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex_container_cast {
+  display: flex;
+  flex-direction: column;
+}
+
+.cast {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.photo {
+  padding-top: 5px;
+  width: 175px;
+  margin: 5px;
+}
+
+.bio {
+  padding: 5px 15px;
+  text-align: justify;
+}
+
+/* font styles */
+
+span {
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* footer styles */
+
+footer {
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #BB9650;
+}
+
+a:visited {
+  color: #1A283C;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:#1A283C;
+}
+
+
+/***************** link Styles ***************/
+
+/* selected link */
+a:active {
+  color: #893626;
+}
+
+
+
+/*****************Media queries*************/
+@media screen and (max-width: 800px) {
+  .outer_container {
+   max-width: 500px;
+  }
+
+ .flex_container {
+   display: flex;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+ }
+
+}
+
+
+/*****************Media queries*************/
+@media screen and (max-width:500px) {
+   .outer_container {
+    max-width: 300px;
+   }
+
+  .flex_container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dido,
+  .gift,
+  .medium {
+    max-width: 250px;
+  }
+
+  .cast_header {
+    font-size: 40px;
+  }
+
+  body {
+    /* background-color: lightgreen; */
+    font-size: 14px;
+  }
+
+  .photo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+
+  .logo {
+    display: none;
+  }
+}
