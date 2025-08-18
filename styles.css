@@ -117,6 +117,9 @@ h1 {
   margin-bottom: 25px;
 }
 
+p {
+  margin-top: .5rem;
+}
 /* footer styles */
 
 footer {
