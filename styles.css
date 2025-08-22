@@ -57,11 +57,26 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    background: #1A283C;
+    padding: 0.5rem 1rem;
 }
 
-.navigation {
+/* .navigation {
   margin-top: 15px;
+} */
+
+
+nav {
+  margin: auto;
+  width: 1200px;
 }
+
+.topnav {
+  background-color: #1A283C;
+}
+
+
 ul {
     list-style-type: none;
     
@@ -75,6 +90,20 @@ li {
 .logo_container {
    width: 125px;
 }
+
+/* Hamburger */
+    .menu-toggle {
+      /* display: none; */
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+    }
 
 
 /* main styles */
@@ -141,6 +170,19 @@ a:hover {
   color:#1A283C;
 }
 
+/********* mobile navigation styles */
+
+
+/* Style navigation menu links */
+ .topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+ }
+
 
 /***************** link Styles ***************/
 
@@ -157,6 +199,11 @@ a:active {
    max-width: 500px;
   }
 
+   .navigation {
+    display: none;
+   }
+  
+
  .flex_container {
    display: flex;
    /* flex-direction: column; */
@@ -166,11 +213,54 @@ a:active {
 }
 
 
+@media (max-width: 768px) {
+      nav {
+      margin: auto;
+      width: 768px;
+    }    
+
+      nav .logo {
+        display: none;
+        color:white;
+      }
+
+        nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #1A283C;
+      }
+
+      nav ul li {
+        /* margin: 1rem 0; */
+        text-align: center;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .topnav a {
+      padding: 5px 16px;
+      font-size: 18px;
+     }
+    }
+
+
 /*****************Media queries*************/
 @media screen and (max-width:500px) {
    .outer_container {
     max-width: 300px;
    }
+
+  nav {
+      width: 450px;
+    }    
+
 
   .flex_container {
     display: flex;
@@ -188,7 +278,6 @@ a:active {
   }
 
   body {
-    /* background-color: lightgreen; */
     font-size: 14px;
   }
 
