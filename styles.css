@@ -52,7 +52,7 @@ img {
 /***************Navigation Styles***************/
 
 
-.nav,
+nav,
 .nav_flex  {
     display: flex;
     flex-direction: row;
