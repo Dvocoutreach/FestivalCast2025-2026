@@ -79,13 +79,20 @@ nav {
 
 ul {
     list-style-type: none;
+    display: flex;
     
 }
 
 li {
-    padding: 20px;
-    
+    padding: 10px;
+    margin-left: .5rem;
 }
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
 
 .logo_container {
    width: 125px;
